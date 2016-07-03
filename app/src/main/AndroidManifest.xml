@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.ac.ict.sensormng">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".service.GPSService" />
+        <service android:name=".service.GSMService" />
+        <service android:name=".service.BluetoothService" />
+        <service android:name=".service.WifiService" />
+        <service android:name=".service.AccelerometerService" />
+        <service android:name=".service.AmbientTemperatureService" />
+        <service android:name=".service.GameRotationVectorService" />
+        <service android:name=".service.GeoMagneticRotationVectorService" />
+        <service android:name=".service.GravityService" />
+        <service android:name=".service.GyroscopeService" />
+        <service android:name=".service.GyroscopeUncalibratedService" />
+        <service android:name=".service.LightService" />
+        <service android:name=".service.LinearAccelerationService" />
+        <service android:name=".service.MagneticFieldService" />
+        <service android:name=".service.MagneticFieldUncalibratedService" />
+        <service android:name=".service.OrientationService" />
+        <service android:name=".service.PressureService" />
+        <service android:name=".service.ProximityService" />
+        <service android:name=".service.RelativeHumidityService" />
+        <service android:name=".service.RotationVectorService" />
+        <service android:name=".service.SignificantMotionService" />
+        <service android:name=".service.StepCounterService" />
+        <service android:name=".service.StepDetectorService" />
+        <service android:name=".service.TemperatureService" />
+    </application>
+
+</manifest>

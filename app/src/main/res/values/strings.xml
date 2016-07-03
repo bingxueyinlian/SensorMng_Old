@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="BluetoothName">SensorMngBluetooth</string>
+    <string name="app_name">传感器</string>
+    <string name="app_name_title">Sensor List</string>
+    <string name="action_settings">Settings</string>
+    <string name="On">On</string>
+    <string name="Off">Off</string>
+
+</resources>
